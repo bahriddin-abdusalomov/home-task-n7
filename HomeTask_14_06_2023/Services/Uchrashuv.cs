@@ -17,7 +17,7 @@ namespace HomeTask_14_06_2023.Services
             }
             else
             {
-                Console.WriteLine("Chuchvara atmen :)");
+                Console.WriteLine("To'y bo'lmaydi");
             }
         }
     }
