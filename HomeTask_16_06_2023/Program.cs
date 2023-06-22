@@ -41,6 +41,7 @@
 
             double triangleSurface = triangle.Surface();
             Console.WriteLine("Triangle surface: " + triangleSurface);
+
         }
     }
 }

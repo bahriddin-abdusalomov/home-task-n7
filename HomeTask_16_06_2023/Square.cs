@@ -21,7 +21,7 @@ namespace HomeTask_16_06_2023
             double surface = Side * Side;
             return surface;
         }
-
+        
 
     }
 }
