@@ -10,7 +10,7 @@ namespace HomeTask_23_06_2023
     public class Employee
     {
 
-        public Guid Id { get; set; }    
+        public Guid Id { get; set; } = Guid.NewGuid();    
 
         public string FirstName { get; set; }
 
@@ -42,7 +42,8 @@ namespace HomeTask_23_06_2023
 
         public static void AddUserToFile(string path, Employee employee)
         {
-            string employeeInfo = $"First name: {employee.FirstName}" +
+            string employeeInfo = $"Id: {employee.Id}" +
+                $"\nFirst name: {employee.FirstName}" +
                 $"\nLast name: {employee.LastName}" +
                 $"\nPhone number: {employee.PhoneNumber}" +
                 $"\nEmail address: {employee.Email}";
