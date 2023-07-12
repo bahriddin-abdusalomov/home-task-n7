@@ -23,6 +23,18 @@ namespace HomeTask_11_07_2023.DbMethods
             connection.Execute(deleteQuery, user);
         }
 
+        public void Show(NpgsqlConnection connection)
+        {
+            string selectQuery = "Select * from users;";
+            IEnumerable<User> users = connection.Query<User>(selectQuery);
+
+            foreach (var item in users)
+            {
+                Console.WriteLine($"{item.Id}   {item.First_name},   {item.Last_name}");
+            }
+
+        }
+
         public void Update(NpgsqlConnection connection, User user)
         {
             string updateQuery = "UPDATE users " +

@@ -14,6 +14,8 @@ namespace HomeTask_11_07_2023.DbMethods
         public void Add(NpgsqlConnection val1, User val2);
         public void Update(NpgsqlConnection val, User user);
         public void Delete(NpgsqlConnection val, User user);
+        public void Show(NpgsqlConnection val);
+
 
     }
 }

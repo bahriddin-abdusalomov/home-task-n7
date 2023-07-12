@@ -53,8 +53,9 @@ namespace HomeTask_11_07_2023
                 };
 
                 // Delete values from users table
-                method.Delete(connection, user3);
+                //method.Delete(connection, user3);
 
+                method.Show(connection);
             }
 
         }
